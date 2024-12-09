@@ -10,7 +10,7 @@ class Listener {
     listen(config) {
         winston.info("MqttTest Listener listen");
     
-        let log = process.env.MQTT_TEST_LOG || false;
+        let log = true;
         winston.info("mqtt log: " + log);
 
         mqttTest.startApp({

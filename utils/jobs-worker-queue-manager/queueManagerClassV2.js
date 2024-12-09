@@ -6,6 +6,7 @@ var listeners = [];
 class QueueManager {
 
 constructor(url, options) {
+  console.log('AMQ Passed URL: ', url)
   this.debug = false;    
   if (options && options.debug!=undefined) {
       this.debug = options.debug;
